@@ -3,9 +3,10 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
-import { FontAwesomeIcon } from 'fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from 'fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from 'fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+// import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -15,7 +16,7 @@ const Sidebar = () => (
     </Link>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
-        <FontAwesomeIcon icon={faHome} color="#4d4d4d" />
+        <FontAwesomeIcon icon={faCoffee} color="#4d4d4d" />
       </NavLink>
       <NavLink
         exact="true"
@@ -23,7 +24,7 @@ const Sidebar = () => (
         className="about-link"
         to="/about"
       >
-        <FontAwesomeIcon icon={faUser} color="#4d4d4d" />
+        <FontAwesomeIcon icon={faCoffee} color="#4d4d4d" />
       </NavLink>
       <NavLink
         exact="true"
@@ -31,7 +32,7 @@ const Sidebar = () => (
         className="contact-link"
         to="/contact"
       >
-        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4d" />
+        <FontAwesomeIcon icon={faCoffee} color="#4d4d4d" />
       </NavLink>
     </nav>
     <ul>
@@ -41,12 +42,12 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://www.linkedin.com/in/rickl1/"
         >
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faCoffee} color="#4d4d4e" />
         </a>
       </li>
       <li>
         <a target="_blank" rel="noreferrer" href="https://github.com/rick-love">
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faCoffee} color="#4d4d4e" />
         </a>
       </li>
     </ul>
