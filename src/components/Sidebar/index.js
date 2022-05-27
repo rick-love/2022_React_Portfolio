@@ -5,7 +5,7 @@ import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faFontAwesome, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 // import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
@@ -42,12 +42,12 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://www.linkedin.com/in/rickl1/"
         >
-          <FontAwesomeIcon icon={faFontAwesome} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
         </a>
       </li>
       <li>
         <a target="_blank" rel="noreferrer" href="https://github.com/rick-love">
-          <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
         </a>
       </li>
     </ul>
