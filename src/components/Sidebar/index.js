@@ -4,7 +4,7 @@ import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 // import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 // import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -16,7 +16,7 @@ const Sidebar = () => (
     </Link>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
-        <FontAwesomeIcon icon={faCoffee} color="#4d4d4d" />
+        <FontAwesomeIcon icon={faHome} color="#4d4d4d" />
       </NavLink>
       <NavLink
         exact="true"
@@ -24,7 +24,7 @@ const Sidebar = () => (
         className="about-link"
         to="/about"
       >
-        <FontAwesomeIcon icon={faCoffee} color="#4d4d4d" />
+        <FontAwesomeIcon icon={faUser} color="#4d4d4d" />
       </NavLink>
       <NavLink
         exact="true"
@@ -32,7 +32,7 @@ const Sidebar = () => (
         className="contact-link"
         to="/contact"
       >
-        <FontAwesomeIcon icon={faCoffee} color="#4d4d4d" />
+        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4d" />
       </NavLink>
     </nav>
     <ul>
