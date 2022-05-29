@@ -3,6 +3,7 @@ import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
+import { MapContainer, Popup, TileLayer, Marker } from 'react-leaflet'
 
 
 
