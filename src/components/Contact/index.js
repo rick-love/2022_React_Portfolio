@@ -3,7 +3,7 @@ import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
-import { MapContainer, Popup, TileLayer, Marker } from 'react-leaflet'
+import { MapContainer, TileLayer } from 'react-leaflet'
 
 
 
@@ -113,11 +113,11 @@ const Contact = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={[48.154275912169865, 11.585289893409305]}>
+          {/* <Marker position={[48.154275912169865, 11.585289893409305]}>
             <Popup>
               I live here <br /> Easily customizable.
             </Popup>
-          </Marker>
+          </Marker> */}
         </MapContainer>
       </div>
       <Loader type="pacman" />
